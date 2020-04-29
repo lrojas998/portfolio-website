@@ -1,0 +1,72 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.pfpTop {
+
+    font-family: 'Unica One', cursive;
+
+  left:50%;
+     top:50%;
+     -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+     transform: translate(-50%, -130%);
+     position:absolute;
+     z-index: 1;
+
+}
+
+.pfpTop2 {
+
+    font-family: 'Unica One', cursive;
+
+  left:50%;
+     top:50%;
+     -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     position:absolute;
+     z-index: 1;
+
+}
+
+
+.pfpTop2 #typed {
+  font-size : 70px;
+  background-color: white;
+
+  font-weight: bold;
+}
+
+hr.style5 {
+	background-color: #fff;
+	border-top: 2px dashed #8c8b8b;
+}
+
+.pfpTop img {
+  width: 10vw;
+  height: 20vh;
+  border-radius: 50%;
+}
+
+.pfpTop h2 {
+  color: black;
+  background-color: white;
+}
+
+.carousel-inner {
+  height: 45vw;
+}
+
+.carousel-item {
+  width: 100%;
+  height: auto;
+  object-fit:cover;
+}
+
+.card:hover {
+  border-width: medium;
+  border-color: grey;
+}
+
+}
