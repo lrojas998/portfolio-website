@@ -1,10 +1,127 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
   <head>
+
     <meta charset="utf-8">
-    <title>Lesley Rojas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- bootstrap library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <!-- TYPED.JS for typewriter animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" ></script>
+
+    <!-- Google font -->
+    <link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href = "style.css">
+
+    <title>Hello, world!</title>
   </head>
   <body>
 
+    <!--
+    NAVBAR by bootstrap
+      -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Lesley R.</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#projects">Projects</a>
+      <a class="nav-item nav-link" href="#">About</a>
+      <a class="nav-item nav-link" href="#">Contact</a>
+    </div>
+  </div>
+</nav>
+<!--
+SLIDESHOW by bootstrap
+  -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <!-- text in center -->
+    <div class="pfpTop">
+      <!--<img src="img/pfp.png" alt="pfp">-->
+      <h2>Hi, I'm Lesley. I...</h2><br>
+
+    </div>
+    <div class="pfpTop2">
+        <span id="typed"></span>
+    </div>
+
+    <div class="carousel-item active">
+      <img src="img/slide3.jpeg" class="d-block w-100" alt="slide3">
+    </div>
+    <div class="carousel-item ">
+        <img src="img/slide1.jpeg" class="d-block w-100" alt="slide1">
+    </div>
+    <div class="carousel-item">
+      <img src="img/slide2.jpeg" class="d-block w-100" alt="slide2">
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<hr class="style5">
+
+<!--Projects-->
+<div class="container" id = "projects">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card h-100" style="width: 18rem;">
+  <img class="card-img-top" src="img/artists.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Top Streaming Artists </h5>
+    <p class="card-text">A famous label company hired me to identify talented artists by collecting data of top streamed music during certain weeks. To achieve this I used ArrayLists, Linked Lists and csv files.</p>
+    <a href="https://github.com/lrojas998/CISC3130-LESLEY/tree/master/Top%20Streaming%20Artists" class="btn btn-secondary">Github Repo</a>
+  </div>
+</div>
+    </div>
+    <div class="col-sm">
+      <div class="card h-100" style="width: 18rem;">
+  <img class="card-img-top" src="img/playlist.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"> Music playlist</h5>
+    <p class="card-text">Worked under Universal Records, and clients needed lists of songs that were in the top charts of Spotify. I was able to achieve this by using Stacks, Queues and Linked Lists.</p>
+    <a href="https://github.com/lrojas998/CISC3130-LESLEY/tree/master/Music%20playlist" class="btn btn-secondary">Github Repo</a>
+  </div>
+</div>
+    </div>
+    <div class="col-sm">
+      <div class="card h-100" style="width: 18rem;">
+  <img class="card-img-top" src="img/movie.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"> Movie Titles</h5>
+    <p class="card-text">Freelancer gig, a business owner wanted to know the latest released of movies, using Binary Search Trees, Tree Sets and Sets I was able to produce the required data.</p>
+    <a href="https://github.com/lrojas998/CISC3130-LESLEY/tree/master/Movie%20Titles" class="btn btn-secondary">Github Repo</a>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- CUSTOM JS -->
+  	<script src="app.js" charset="utf-8"></script>
   </body>
 </html>
